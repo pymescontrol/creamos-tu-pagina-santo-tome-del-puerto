@@ -323,9 +323,11 @@ main {
   z-index: 150;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Evita que el contenido desborde hacia arriba en pantallas pequeñas */
   align-items: center;
-  gap: 24px;
+  gap: 20px;
+  padding: 110px 24px 40px; /* Padding superior para dejar espacio a la cabecera */
+  overflow-y: auto; /* Permite scroll vertical si las opciones superan la altura de la pantalla */
   opacity: 0;
   pointer-events: none;
   transition: var(--transition-smooth);
@@ -1582,6 +1584,28 @@ main {
     flex-direction: column;
     text-align: center;
   }
+  
+  /* Mostrar video del hero y adaptar el visual-block */
+  .hero-visual-block {
+    height: auto;
+    perspective: none;
+    margin-top: 20px;
+  }
+  .hero-visual-block .mockup-card {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  .hero-visual-block .stat-card {
+    display: none; /* Ocultar tarjetas flotantes que tapan el video */
+  }
+  .custom-video-controls {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1591,9 +1615,6 @@ main {
   }
   .hero-actions .btn {
     width: 100%;
-  }
-  .hero-visual-block {
-    display: none; /* Ocultar efectos en móviles pequeños */
   }
   .studio-name {
     font-size: 18px;
