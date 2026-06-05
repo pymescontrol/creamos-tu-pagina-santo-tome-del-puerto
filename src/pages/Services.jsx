@@ -60,9 +60,9 @@ export default function Services() {
       color: "amber"
     },
     {
-      icon: "🤝",
-      title: "Acompañamiento inicial",
-      desc: "Te enseño a usar tu web y actualizar la información de forma sencilla mediante soporte directo.",
+      icon: "🛠️",
+      title: "Mantenimiento y actualizaciones",
+      desc: "Me encargo de mantener tu web al día: cambiar textos, añadir fotos o actualizar lo que necesites.",
       color: "green"
     }
   ];

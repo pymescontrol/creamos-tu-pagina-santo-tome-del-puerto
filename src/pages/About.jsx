@@ -54,9 +54,9 @@ export default function About() {
             </FloatingCard>
 
             <FloatingCard glowColor="green">
-              <h3 style={{ fontFamily: 'Plus Jakarta Sans', fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>Acompañamiento</h3>
+              <h3 style={{ fontFamily: 'Plus Jakarta Sans', fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>Mantenimiento continuo</h3>
               <p style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>
-                No desaparezco al entregar la web. Te asesoro en el alta del dominio, hosting, y te facilito formación directa para que gestiones tus textos sin depender de mí para cambios sencillos.
+                No desaparezco al entregar la web. Me encargo del mantenimiento continuo para que tu página siempre esté actualizada con nuevas fotos, textos o cualquier cambio que necesites con el paso del tiempo.
               </p>
             </FloatingCard>
           </div>
