@@ -97,6 +97,7 @@ body {
   width: 45vw;
   height: 45vw;
   background: var(--green-neon);
+  animation: floatGreen 25s infinite alternate ease-in-out;
 }
 
 .spot-blue {
@@ -105,6 +106,7 @@ body {
   width: 50vw;
   height: 50vw;
   background: var(--blue-water);
+  animation: floatBlue 30s infinite alternate ease-in-out;
 }
 
 .spot-amber {
@@ -113,6 +115,25 @@ body {
   width: 40vw;
   height: 40vw;
   background: var(--amber-fire);
+  animation: floatAmber 28s infinite alternate ease-in-out;
+}
+
+@keyframes floatGreen {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(10vw, 15vh) scale(1.1); }
+  100% { transform: translate(-15vw, 5vh) scale(0.9); }
+}
+
+@keyframes floatBlue {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-15vw, -10vh) scale(0.9); }
+  100% { transform: translate(10vw, -20vh) scale(1.1); }
+}
+
+@keyframes floatAmber {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20vw, -15vh) scale(1.1); }
+  100% { transform: translate(-10vw, -5vh) scale(0.95); }
 }
 
 /* Contenedor de la página */
