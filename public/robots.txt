@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pymescontrol.github.io/creamos-tu-pagina-santo-tome-del-puerto/sitemap.xml
