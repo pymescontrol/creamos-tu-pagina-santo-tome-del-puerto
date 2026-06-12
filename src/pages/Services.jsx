@@ -71,7 +71,7 @@ export default function Services() {
     <>
       <PageHeader 
         badge="Servicios Web"
-        title="Qué puedo hacer por tu negocio"
+        title="Diseño web para negocios locales"
         subtitle="Creo webs pensadas para negocios reales: bares, restaurantes, casas rurales, tiendas, talleres, peluquerías, autónomos y servicios profesionales que quieren verse mejor, explicar lo que hacen y facilitar que el cliente contacte."
       />
 

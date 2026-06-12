@@ -8,7 +8,7 @@ export default function RestaurantWebs() {
     <>
       <PageHeader 
         badge="Hostelería y Alimentación"
-        title="Webs para restaurantes, bares y tiendas locales"
+        title="Páginas web para bares, restaurantes y negocios de hostelería"
         subtitle="Muestra tu carta digital, tus horarios y tu localización sin PDFs molestos. Facilita que tus clientes reserven o te encuentren desde la carretera."
       />
 

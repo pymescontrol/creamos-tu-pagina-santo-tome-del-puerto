@@ -8,7 +8,7 @@ export default function RuralHouses() {
     <>
       <PageHeader 
         badge="Turismo Rural"
-        title="Webs para casas rurales y alojamientos"
+        title="Páginas web para casas rurales y alojamientos de la Sierra"
         subtitle="Muestra el encanto de tu alojamiento y consigue reservas directas sin pagar comisiones abusivas a intermediarios."
       />
 

@@ -84,7 +84,7 @@ export default function Hero() {
             <span className="badge-text">Diseño web profesional y cercano</span>
           </div>
           <h1>
-            Páginas web profesionales para negocios de <span className="gradient-text text-glow-green">Santo Tomé del Puerto</span> y la Sierra
+            Páginas web profesionales en <span className="gradient-text text-glow-green">Santo Tomé del Puerto</span> para negocios de la Sierra
           </h1>
           <p className="hero-subtitle">
             Creo webs modernas, claras y preparadas para que tus clientes te encuentren, confíen en tu negocio y contacten contigo desde el móvil.

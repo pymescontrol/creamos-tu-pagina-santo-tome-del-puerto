@@ -8,7 +8,7 @@ export default function About() {
     <>
       <PageHeader 
         badge="El Estudio"
-        title="Quién está detrás de Daiaxme"
+        title="Daiaxme Web Studio: diseño web cercano para negocios locales"
         subtitle="Diseño web honesto, cercano y enfocado a la comarca de Santo Tomé del Puerto."
       />
 

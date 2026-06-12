@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import Layout from './components/Layout';
 
 // Importación de Páginas
@@ -14,9 +14,26 @@ import Zone from './pages/Zone';
 import About from './pages/About';
 import Contact from './pages/Contact';
 
+// Componente para interceptar y redirigir URLs con hash antiguo
+function HashRedirect() {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    // Si la URL tiene un hash que parece una ruta (ej. #/servicios)
+    if (window.location.hash && window.location.hash.startsWith('#/')) {
+      const path = window.location.hash.substring(1); // Quita el '#' y deja '/servicios'
+      // Redirigir a la nueva ruta sin hash
+      navigate(path, { replace: true });
+    }
+  }, [navigate]);
+
+  return null;
+}
+
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/creamos-tu-pagina-santo-tome-del-puerto/">
+      <HashRedirect />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -34,6 +51,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

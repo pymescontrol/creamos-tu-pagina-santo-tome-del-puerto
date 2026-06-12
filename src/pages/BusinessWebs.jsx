@@ -8,7 +8,7 @@ export default function BusinessWebs() {
     <>
       <PageHeader 
         badge="Presencia Digital"
-        title="Webs para negocios de toda la vida"
+        title="Webs para negocios de Santo Tomé del Puerto, Riaza, Ayllón y pueblos cercanos"
         subtitle="Un negocio local necesita algo más que una red social o una web antigua que no funciona en móviles. Necesita una ventana digital que transmita total confianza."
       />
 

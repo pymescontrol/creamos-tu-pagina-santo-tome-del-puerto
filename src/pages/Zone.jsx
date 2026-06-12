@@ -9,7 +9,7 @@ export default function Zone() {
     <>
       <PageHeader 
         badge="Área de Cobertura"
-        title="Estudio de diseño web local en la Sierra"
+        title="Diseño web desde Santo Tomé del Puerto para negocios de la zona"
         subtitle="Mi base principal está en Santo Tomé del Puerto. Me desplazo para reunirme con negocios locales en toda la comarca."
       />
 

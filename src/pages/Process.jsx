@@ -36,7 +36,7 @@ export default function Process() {
     <>
       <PageHeader 
         badge="Metodología"
-        title="Así creamos tu página web"
+        title="Así creo la página web de tu negocio"
         subtitle="Un proceso sencillo, transparente y diseñado para que no tengas que preocuparte por tecnicismos ni configuraciones complejas."
       />
 

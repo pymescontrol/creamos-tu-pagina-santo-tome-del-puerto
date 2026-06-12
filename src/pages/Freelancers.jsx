@@ -8,7 +8,7 @@ export default function Freelancers() {
     <>
       <PageHeader 
         badge="Autónomos y Profesionales"
-        title="Webs para autónomos y pymes locales"
+        title="Webs profesionales para autónomos y servicios locales"
         subtitle="Muestra tus especialidades, tu zona de cobertura y facilita que tus vecinos soliciten presupuestos fácilmente."
       />
 
