@@ -46,7 +46,7 @@ const routes = [
     description: 'Villarejo Web Studio trabaja desde Santo Tomé del Puerto para negocios de Riaza, Ayllón, Buitrago de Lozoya, Sierra Norte, Segovia y Aranda de Duero.'
   },
   {
-    path: '/sobre-daiaxme/',
+    path: '/sobre-nosotros/',
     title: 'Sobre Villarejo Web Studio | Diseño web profesional',
     description: 'Conoce Villarejo Web Studio. Ayudo a negocios a tener una imagen digital fuerte, profesional y muy cuidada.'
   },

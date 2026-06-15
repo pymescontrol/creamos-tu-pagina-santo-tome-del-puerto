@@ -44,7 +44,7 @@ export default function App() {
           <Route path="/autonomos" element={<Freelancers />} />
           <Route path="/proceso" element={<Process />} />
           <Route path="/zona" element={<Zone />} />
-          <Route path="/sobre-daiaxme" element={<About />} />
+          <Route path="/sobre-nosotros" element={<About />} />
           <Route path="/contacto" element={<Contact />} />
           
           {/* Redirección por defecto si la ruta no existe */}

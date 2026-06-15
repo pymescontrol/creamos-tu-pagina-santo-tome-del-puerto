@@ -55,7 +55,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <p>&copy; 2026 Villarejo Web Studio. Diseñado con pasión local.</p>
         <div className="footer-legal">
-          <Link to="/">Inicio</Link> &middot; <Link to="/servicios">Servicios</Link> &middot; <Link to="/zona">Zona</Link> &middot; <Link to="/sobre-daiaxme">Sobre Mí</Link> &middot; <Link to="/contacto">Contacto</Link>
+          <Link to="/">Inicio</Link> &middot; <Link to="/servicios">Servicios</Link> &middot; <Link to="/zona">Zona</Link> &middot; <Link to="/sobre-nosotros">Sobre Mí</Link> &middot; <Link to="/contacto">Contacto</Link>
         </div>
       </div>
     </footer>

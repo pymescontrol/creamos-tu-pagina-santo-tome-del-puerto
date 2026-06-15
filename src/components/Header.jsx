@@ -62,7 +62,7 @@ export default function Header() {
           <NavLink to="/autonomos">Autónomos</NavLink>
           <NavLink to="/proceso">Proceso</NavLink>
           <NavLink to="/zona">Zona</NavLink>
-          <NavLink to="/sobre-daiaxme">Sobre Mí</NavLink>
+          <NavLink to="/sobre-nosotros">Sobre Mí</NavLink>
           <NavLink to="/contacto">Contacto</NavLink>
         </nav>
 
@@ -97,7 +97,7 @@ export default function Header() {
         <NavLink to="/autonomos" onClick={toggleMenu}>Autónomos</NavLink>
         <NavLink to="/proceso" onClick={toggleMenu}>Proceso</NavLink>
         <NavLink to="/zona" onClick={toggleMenu}>Zona</NavLink>
-        <NavLink to="/sobre-daiaxme" onClick={toggleMenu}>Sobre Mí</NavLink>
+        <NavLink to="/sobre-nosotros" onClick={toggleMenu}>Sobre Mí</NavLink>
         <NavLink to="/contacto" onClick={toggleMenu}>Contacto</NavLink>
       </nav>
     </>
