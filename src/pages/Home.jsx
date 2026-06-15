@@ -52,6 +52,8 @@ export default function Home() {
             <h2 className="section-title" style={{ textAlign: 'left' }}>Los negocios de los pueblos también merecen webs profesionales</h2>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
               No hace falta irse a Madrid, Segovia o Aranda de Duero para tener una web de nivel. Trabajo desde Santo Tomé del Puerto para estar cerca de tu negocio, poder tomar un café en persona y diseñar una solución real que te consiga clientes.
+              <br/><br/>
+              <Link to="/diseno-web-santo-tome-del-puerto" style={{ color: 'var(--green-neon)', textDecoration: 'none', fontSize: '14px' }}>&rarr; Saber más sobre mi trabajo en Santo Tomé del Puerto</Link>
             </p>
             <div style={{ display: 'grid', gap: '14px' }}>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>

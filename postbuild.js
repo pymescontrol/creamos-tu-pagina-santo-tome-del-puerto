@@ -54,6 +54,12 @@ const routes = [
     path: '/contacto/',
     title: 'Contacto | Villarejo Web Studio',
     description: 'Contacta con Villarejo Web Studio para crear una página web profesional para tu negocio local en Santo Tomé del Puerto y pueblos cercanos.'
+  },
+  {
+    path: '/diseno-web-santo-tome-del-puerto/',
+    title: 'Diseño web en Santo Tomé del Puerto | Villarejo Web Studio',
+    description: 'Páginas web profesionales para negocios de Santo Tomé del Puerto y la Sierra. Diseño web cercano para bares, restaurantes, casas rurales, autónomos y negocios locales.',
+    hasJsonLd: true
   }
 ];
 

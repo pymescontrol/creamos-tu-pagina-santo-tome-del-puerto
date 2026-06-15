@@ -60,4 +60,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://pymescontrol.github.io/creamos-tu-pagina-santo-tome-del-puerto/diseno-web-santo-tome-del-puerto/</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

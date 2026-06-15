@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import ServiceCard from '../components/ServiceCard';
 import CTASection from '../components/CTASection';
@@ -77,6 +78,11 @@ export default function Services() {
 
       <section className="section-padding reveal visible" style={{ paddingTop: '40px' }}>
         <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <Link to="/diseno-web-santo-tome-del-puerto" style={{ color: 'var(--green-neon)', textDecoration: 'none', fontSize: '15px' }}>
+              &rarr; Conoce mi servicio local de diseño web en Santo Tomé del Puerto
+            </Link>
+          </div>
           <div className="grid grid-3">
             {servicesList.map((service, idx) => (
               <ServiceCard 

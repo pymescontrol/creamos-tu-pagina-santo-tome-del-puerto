@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import FloatingCard from '../components/FloatingCard';
 import LocationGrid from '../components/LocationGrid';
@@ -41,6 +42,7 @@ export default function Zone() {
               <p style={{ fontSize: '14px', color: 'var(--text-secondary)' }}>
                 Nuestra base comarcal directa. Visito periódicamente restaurantes, alojamientos turísticos y comercios de la falda de la sierra y la vertiente segoviana.
               </p>
+              <Link to="/diseno-web-santo-tome-del-puerto" style={{ display: 'inline-block', marginTop: '12px', fontSize: '13px', color: 'var(--amber-neon)' }}>Diseño web local &rarr;</Link>
             </FloatingCard>
 
             <FloatingCard glowColor="green">

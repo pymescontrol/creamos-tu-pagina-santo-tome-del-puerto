@@ -13,6 +13,7 @@ import Process from './pages/Process';
 import Zone from './pages/Zone';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import SantoTomeLanding from './pages/SantoTomeLanding';
 
 // Componente para interceptar y redirigir URLs con hash antiguo
 function HashRedirect() {
@@ -45,6 +46,7 @@ export default function App() {
           <Route path="/proceso" element={<Process />} />
           <Route path="/zona" element={<Zone />} />
           <Route path="/sobre-nosotros" element={<About />} />
+          <Route path="/diseno-web-santo-tome-del-puerto" element={<SantoTomeLanding />} />
           <Route path="/contacto" element={<Contact />} />
           
           {/* Redirección por defecto si la ruta no existe */}

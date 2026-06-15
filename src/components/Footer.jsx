@@ -28,6 +28,11 @@ export default function Footer() {
         <div className="footer-info">
           <h4>Ubicación</h4>
           <p>Santo Tomé del Puerto, Segovia y Sierra Norte de Madrid</p>
+          <p style={{ marginTop: '8px' }}>
+            <Link to="/diseno-web-santo-tome-del-puerto" style={{ color: 'var(--green-neon)', textDecoration: 'none', fontSize: '0.85rem' }}>
+              &rarr; Diseño web en Santo Tomé del Puerto
+            </Link>
+          </p>
         </div>
 
         <div className="footer-contact">
