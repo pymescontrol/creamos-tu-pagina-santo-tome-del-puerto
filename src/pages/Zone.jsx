@@ -22,7 +22,7 @@ export default function Zone() {
                 Tu diseñador web a la vuelta de la esquina
               </h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '18px' }}>
-                Daiaxme Web Studio trabaja desde **Santo Tomé del Puerto**, en una zona estratégica entre Segovia, la Sierra Norte de Madrid, Riaza, Ayllón, Buitrago de Lozoya y pueblos cercanos.
+                Villarejo Web Studio trabaja desde **Santo Tomé del Puerto**, en una zona estratégica entre Segovia, la Sierra Norte de Madrid, Riaza, Ayllón, Buitrago de Lozoya y pueblos cercanos.
               </p>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '18px' }}>
                 **Mi ventaja es la cercanía.** Puedo entender mejor la realidad de los negocios de la zona porque no hablo desde una gran ciudad ni desde una agencia impersonal. Hablo desde aquí, desde el entorno donde están muchos de los negocios que necesitan dar el salto digital.

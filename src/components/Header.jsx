@@ -35,10 +35,10 @@ export default function Header() {
         <Link to="/" className="brand" aria-label="Volver a Inicio">
           <div className="logo">
             <svg width="100%" height="100%" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="24" stroke="#00F0FF" strokeWidth="2.5" className="svg-circle" />
-              <path d="M22 19H29C35.0751 19 40 23.9249 40 30C40 36.0751 35.0751 41 29 41H22V19Z" fill="url(#header-fire-gradient)" className="svg-d" />
+              <circle cx="30" cy="30" r="26" stroke="#00F0FF" strokeWidth="2" className="svg-circle" />
+              <text x="30" y="32" dominantBaseline="middle" textAnchor="middle" fill="url(#header-fire-gradient)" fontSize="34" fontWeight="900" fontFamily="sans-serif" style={{filter: 'drop-shadow(0px 0px 4px #00FF66)'}} className="svg-d">V</text>
               <defs>
-                <linearGradient id="header-fire-gradient" x1="22" y1="19" x2="40" y2="41" gradientUnits="userSpaceOnUse">
+                <linearGradient id="header-fire-gradient" x1="15" y1="15" x2="45" y2="45" gradientUnits="userSpaceOnUse">
                   <stop offset="0%" stopColor="#FF9D00" />
                   <stop offset="50%" stopColor="#FF5B00" />
                   <stop offset="100%" stopColor="#FF2E00" />
@@ -47,7 +47,7 @@ export default function Header() {
             </svg>
           </div>
           <div className="brand-text">
-            <span className="studio-name">Daiaxme</span>
+            <span className="studio-name">Villarejo</span>
             <span className="studio-sub">Web Studio</span>
           </div>
         </Link>
@@ -62,14 +62,14 @@ export default function Header() {
           <NavLink to="/autonomos">Autónomos</NavLink>
           <NavLink to="/proceso">Proceso</NavLink>
           <NavLink to="/zona">Zona</NavLink>
-          <NavLink to="/sobre-daiaxme">Sobre Daiaxme</NavLink>
+          <NavLink to="/sobre-daiaxme">Sobre Mí</NavLink>
           <NavLink to="/contacto">Contacto</NavLink>
         </nav>
 
         {/* Botón de Acción Rápida (WhatsApp) */}
         <div className="header-actions">
           <a 
-            href="https://wa.me/34691223199?text=Hola!%20He%20visto%20la%20web%20de%20Daiaxme%20y%20quiero%20información%20para%20mi%20negocio." 
+            href="https://wa.me/34691223199?text=Hola!%20He%20visto%20la%20web%20y%20quiero%20información%20para%20mi%20negocio." 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-nav"
@@ -97,7 +97,7 @@ export default function Header() {
         <NavLink to="/autonomos" onClick={toggleMenu}>Autónomos</NavLink>
         <NavLink to="/proceso" onClick={toggleMenu}>Proceso</NavLink>
         <NavLink to="/zona" onClick={toggleMenu}>Zona</NavLink>
-        <NavLink to="/sobre-daiaxme" onClick={toggleMenu}>Sobre Daiaxme</NavLink>
+        <NavLink to="/sobre-daiaxme" onClick={toggleMenu}>Sobre Mí</NavLink>
         <NavLink to="/contacto" onClick={toggleMenu}>Contacto</NavLink>
       </nav>
     </>

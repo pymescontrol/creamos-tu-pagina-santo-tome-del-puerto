@@ -25,10 +25,9 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Crear el subject y body del mailto
-    const subject = encodeURIComponent(`Presupuesto Web Daiaxme - ${formData.business}`);
+    const subject = encodeURIComponent(`Presupuesto Web Villarejo - ${formData.business}`);
     const body = encodeURIComponent(
-      `Hola Daiaxme Web Studio,\n\n` +
+      `Hola Villarejo Web Studio,\n\n` +
       `Quiero solicitar un presupuesto para mi negocio:\n\n` +
       `- Nombre: ${formData.name}\n` +
       `- Negocio / Sector: ${formData.business}\n` +
@@ -129,7 +128,7 @@ export default function Contact() {
                     <span>Enviar consulta</span>
                   </button>
                   <a 
-                    href="https://wa.me/34691223199?text=Hola!%20He%20visto%20la%20web%20de%20Daiaxme%20y%20quiero%20información%20para%20mi%20negocio." 
+                    href="https://wa.me/34691223199?text=Hola!%20He%20visto%20la%20web%20y%20quiero%20información%20para%20mi%20negocio." 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="btn btn-secondary btn-full"

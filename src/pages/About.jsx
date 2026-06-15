@@ -8,7 +8,7 @@ export default function About() {
     <>
       <PageHeader 
         badge="El Estudio"
-        title="Daiaxme Web Studio: diseño web cercano para negocios locales"
+        title="Villarejo Web Studio: diseño web profesional para negocios locales"
         subtitle="Diseño web honesto, cercano y enfocado a la comarca de Santo Tomé del Puerto."
       />
 
@@ -21,7 +21,7 @@ export default function About() {
                 Cercanía y tecnología
               </h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '18px' }}>
-                **Daiaxme Web Studio nace con una idea clara:** ayudar a negocios locales a tener una imagen digital profesional sin perder cercanía. Muchos negocios de pueblo tienen buen producto, buen trato y años de trabajo detrás, pero no siempre lo transmiten en internet. Mi trabajo es convertir esa esencia en una web clara, moderna y preparada para que el cliente confíe.
+                **Villarejo Web Studio nace con una idea clara:** ayudar a negocios locales a tener una imagen digital profesional sin perder cercanía. Muchos negocios de pueblo tienen buen producto, buen trato y años de trabajo detrás, pero no siempre lo transmiten en internet. Mi trabajo es convertir esa esencia en una web clara, moderna y preparada para que el cliente confíe.
               </p>
               <p style={{ color: 'var(--text-secondary)' }}>
                 Sé lo que cuesta levantar la persiana o atender un alojamiento rural de sol a sol en nuestra zona. Por eso, no te ofrezco soluciones impersonales ni te hablo con tecnicismos informáticos difíciles de entender. Te ofrezco un trato de tú a tú, sincero, creativo y con intención.

@@ -8,19 +8,20 @@ export default function Footer() {
         <div className="footer-brand">
           <div className="footer-logo">
             <svg width="36" height="36" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="30" r="24" stroke="#00F0FF" stroke-width="3" />
-              <path d="M22 19H29C35.0751 19 40 23.9249 40 30C40 36.0751 35.0751 41 29 41H22V19Z" fill="url(#footer-fire-gradient)" />
+              <circle cx="30" cy="30" r="26" stroke="#00F0FF" stroke-width="2" />
+              <text x="30" y="32" dominantBaseline="middle" textAnchor="middle" fill="url(#footer-fire-gradient)" fontSize="34" fontWeight="900" fontFamily="sans-serif" style={{filter: 'drop-shadow(0px 0px 4px #00FF66)'}}>V</text>
               <defs>
-                <linearGradient id="footer-fire-gradient" x1="22" y1="19" x2="40" y2="41" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#FF9D00" />
-                  <stop offset="100%" stop-color="#FF2E00" />
+                <linearGradient id="footer-fire-gradient" x1="15" y1="15" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#FF9D00" />
+                  <stop offset="100%" stopColor="#FF2E00" />
                 </linearGradient>
               </defs>
             </svg>
           </div>
           <div>
-            <strong className="footer-title">Daiaxme Web Studio</strong>
+            <strong className="footer-title">Villarejo Web Studio</strong>
             <p className="footer-subtitle">Páginas web para negocios locales</p>
+            <p style={{fontSize: '0.75rem', color: '#64748b', marginTop: '4px'}}>Un proyecto de Francisco David</p>
           </div>
         </div>
 
@@ -33,7 +34,7 @@ export default function Footer() {
           <h4>Contacto directo</h4>
           <ul>
             <li>
-              <a href="https://wa.me/34691223199?text=Hola%20Daiaxme" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/34691223199?text=Hola" target="_blank" rel="noopener noreferrer">
                 WhatsApp: +34 691 22 31 99
               </a>
             </li>
@@ -43,8 +44,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/daiaxme.web" target="_blank" rel="noopener noreferrer">
-                Instagram: @daiaxme.web
+              <a href="https://instagram.com/villarejo.web" target="_blank" rel="noopener noreferrer">
+                Instagram: @villarejo.web
               </a>
             </li>
           </ul>
@@ -52,9 +53,9 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2026 Daiaxme Web Studio. Diseñado con pasión local.</p>
+        <p>&copy; 2026 Villarejo Web Studio. Diseñado con pasión local.</p>
         <div className="footer-legal">
-          <Link to="/">Inicio</Link> &middot; <Link to="/servicios">Servicios</Link> &middot; <Link to="/zona">Zona</Link> &middot; <Link to="/sobre-daiaxme">Sobre Daiaxme</Link> &middot; <Link to="/contacto">Contacto</Link>
+          <Link to="/">Inicio</Link> &middot; <Link to="/servicios">Servicios</Link> &middot; <Link to="/zona">Zona</Link> &middot; <Link to="/sobre-daiaxme">Sobre Mí</Link> &middot; <Link to="/contacto">Contacto</Link>
         </div>
       </div>
     </footer>
