@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import FloatingCard from '../components/FloatingCard';
 import CTASection from '../components/CTASection';
 
 export default function Home() {
+  const [webModernTitle, setWebModernTitle] = useState('Web moderna');
+
+  useEffect(() => {
+    let active = true;
+    // Publicado junto a la web: los cambios de datos no necesitan recompilar React.
+    fetch(`${import.meta.env.BASE_URL}control-de-web.json`, { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error('Datos de la web no disponibles');
+        return response.json();
+      })
+      .then(data => {
+        const title = data?.home?.webModernTitle;
+        if (active && typeof title === 'string' && title.trim().length > 0 && title.length <= 80) {
+          setWebModernTitle(title.trim());
+        }
+      })
+      .catch(() => {}); // Si hay un error mantenemos el texto habitual.
+    return () => { active = false; };
+  }, []);
+
   const cardsData = [
-    { title: "Web moderna", desc: "Diseño elegante y adaptado a las últimas tendencias estéticas.", color: "green" },
+    { title: webModernTitle, desc: "Diseño elegante y adaptado a las últimas tendencias estéticas.", color: "green" },
     { title: "Contacto directo", desc: "Botones para que el cliente llame o mande un WhatsApp en un clic.", color: "blue" },
     { title: "Diseño móvil", desc: "Pensado para smartphones, desde donde busca el 90% de la gente.", color: "amber" },
     { title: "Imagen profesional", desc: "Transmite la confianza y seriedad que tu negocio realmente tiene.", color: "green" },
