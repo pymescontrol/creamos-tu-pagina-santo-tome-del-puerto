@@ -6,7 +6,7 @@ import CTASection from '../components/CTASection';
 
 export default function Home() {
   const cardsData = [
-    { title: "Web moderna", desc: "Diseño elegante y adaptado a las últimas tendencias estéticas.", color: "green" },
+    { title: "Web moderna — CONTROL WEB PRUEBA", desc: "Diseño elegante y adaptado a las últimas tendencias estéticas.", color: "green" },
     { title: "Contacto directo", desc: "Botones para que el cliente llame o mande un WhatsApp en un clic.", color: "blue" },
     { title: "Diseño móvil", desc: "Pensado para smartphones, desde donde busca el 90% de la gente.", color: "amber" },
     { title: "Imagen profesional", desc: "Transmite la confianza y seriedad que tu negocio realmente tiene.", color: "green" },
