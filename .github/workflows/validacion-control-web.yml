@@ -1,0 +1,29 @@
+name: Validacion aislada Control de Web
+on:
+  push:
+    branches:
+      - control-de-web-validacion-20261022
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probar-web:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener rama de pruebas
+        uses: actions/checkout@v4
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Instalar dependencias
+        run: npm ci
+      - name: Compilar la web React y generar docs
+        run: npm run build
+      - name: Comprobar que el texto de prueba se compilo
+        run: |
+          test -f docs/index.html
+          grep -R --include='*.js' -F 'CONTROL WEB PRUEBA' docs/assets/
+      - name: Confirmar que no se publico nada
+        run: echo 'Solo prueba: no se hace deploy ni commit a main.'
