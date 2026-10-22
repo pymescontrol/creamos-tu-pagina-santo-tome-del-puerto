@@ -26,4 +26,4 @@ jobs:
           test -f docs/index.html
           grep -R --include='*.js' -F 'CONTROL WEB PRUEBA' docs/assets/
       - name: Confirmar que no se publico nada
-        run: echo 'Solo prueba: no se hace deploy ni commit a main.'
+        run: echo 'Prueba aislada finalizada sin publicar cambios'
