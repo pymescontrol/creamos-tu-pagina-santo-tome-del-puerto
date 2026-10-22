@@ -24,6 +24,8 @@ jobs:
       - name: Comprobar que el texto de prueba se compilo
         run: |
           test -f docs/index.html
-          grep -R --include='*.js' -F 'CONTROL WEB PRUEBA' docs/assets/
+          test -f docs/control-de-web.json
+          node -e "const c = require('./docs/control-de-web.json'); if (c.home.webModernTitle !== 'Web moderna') process.exit(1)"
+          grep -R --include='*.js' -F 'control-de-web.json' docs/assets/
       - name: Confirmar que no se publico nada
         run: echo 'Prueba aislada finalizada sin publicar cambios'
