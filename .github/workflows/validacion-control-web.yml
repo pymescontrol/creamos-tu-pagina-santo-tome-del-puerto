@@ -5,7 +5,7 @@ on:
       - control-de-web-validacion-20261022
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   probar-web:
     runs-on: ubuntu-latest
@@ -27,5 +27,14 @@ jobs:
           test -f docs/control-de-web.json
           node -e "const c = require('./docs/control-de-web.json'); if (c.home.webModernTitle !== 'Web moderna') process.exit(1)"
           grep -R --include='*.js' -F 'control-de-web.json' docs/assets/
+      - name: Guardar compilado solo en rama de pruebas (no publicar)
+        run: |
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git add -A docs
+          if ! git diff --cached --quiet; then
+            git commit -m 'test(control-de-web): generar archivos publicables en rama de pruebas'
+            git push origin HEAD:control-de-web-validacion-20261022
+          fi
       - name: Confirmar que no se publico nada
-        run: echo 'Prueba aislada finalizada sin publicar cambios'
+        run: echo 'Compilacion aislada terminada sin modificar main'
